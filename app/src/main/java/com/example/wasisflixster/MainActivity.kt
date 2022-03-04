@@ -30,8 +30,6 @@ class MainActivity : AppCompatActivity() {
 
 
         val client = AsyncHttpClient()
-
-
         client.get(NOW_PLAYING_URL, object: JsonHttpResponseHandler() {
             override fun onFailure(
                 statusCode: Int,
